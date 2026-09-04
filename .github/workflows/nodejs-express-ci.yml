@@ -111,7 +111,7 @@ jobs:
             --output text \
             --query 'Command.CommandId')
 
-          echo "SSM Command ID: $COMMAND_ID"
+          echo "SSM Command ID: $COMMAND_ID"""
 
           for i in {1..600}; do
             STATUS=$(aws ssm get-command-invocation \

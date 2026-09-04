@@ -9,8 +9,6 @@ var indexRouter = require('./routes/index');
 var app = express();
 
 app.set('env', process.env.NODE_ENV || process.env.ENV || 'development');
-
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
